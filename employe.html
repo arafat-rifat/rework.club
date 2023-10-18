@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rework</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Header Part -->
+    <header class="header">
+      <nav class="w-full nav">
+        <div
+          class="grid grid-cols-1 lg: grid-cols-2 px-[24px] items-center bg-[color:var( --toastify-color-light) lg:h-[15vh]"
+        >
+          <!-- left -->
+          <div class="w-[180px]">
+            <img
+              src="image/nav-logo.a276b3fad0c35fde67453d62d41de289.svg"
+              alt=""
+              class="w-full"
+            />
+          </div>
+          <!-- End Lfet -->
+
+          <!--DropDown Version 0.01-->
+          <div class="dropdown lg:hidden flex justify-end left-[20px]">
+            <label
+              tabindex="0"
+              class="btn m-1 items-center text-blue-600 bg-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="dropdown-content z-[1] menu p-2 shadow bg-base-100 w-52 font-normal text-lg bg-white"
+            >
+              <li>
+                <a class="hover:text-white duration-300 hover:bg-blue-300"
+                href="index.html"
+                  >For Recruiters</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-blue-600 duration-300">For Employers</a>
+              </li>
+              <li>
+                <a class="hover:text-blue-600 duration-300" href="blog.html">Blog</a>
+              </li>
+              <li><a class="hover:text-blue-600 duration-300">Log In</a></li>
+              <li>
+                <a class="hover:text-blue-600 duration-300">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+          <!-- End DropDown -->
+
+          <!-- Right -->
+          <div class="hidden lg:block">
+            <ul
+              class="flex justify-between items-center font-medium text-base lg:py-6 block"
+            >
+              <li><a href="index.html">For Recruiters</a></li>
+              <li><a href="#">For Employers</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li>
+                <a
+                  href="#"
+                  class="show-modal lg:px-5 lg:py-2 border-2 border-[color:var(--blue)] rounded-[6px]"
+                  >Log In</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="show-modal-Second lg:px-5 lg:py-2 border-2 border-[color:var(--blue)] bg-[color:var(--dark-blue)] text-white rounded-[6px]"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- End Right -->
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Hero Section-->
+    <section class="section1 bg-gradient-to-r from-[#444DA1] to-[#2068FF]">
+      <div class="w-full">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 lg:px-20 lg:py-20 lg:gap-[60px]"
+        >
+          <!-- left -->
+          <div
+            class="flex flex-col px-[24px] py-[20px] gap-8 order-2 lg:order-1"
+          >
+            <div class="mb-4 lg:mb-8">
+              <h1
+                class="text-2xl lg:text-5xl font-extrabold text-white  mb-4 lg:mb-8"
+              >
+              UNLEASH POWER OF AI
+              </h1>
+              <h1 class="text-2xl lg:text-3xl font-extrabold text-white">
+                BOOST YOUR HIRING BY 80%
+              </h1>
+            </div>
+
+            <p class="lg:text-2xl text-lg text-white leading-10 items-start">
+                Streamline your hiring and source the best candidates for your company with the help of AI powered tools
+            </p>
+            <div
+              class="flex flex-wrap lg:flex-nowrap gap-6 justify-center lg:justify-start mt-[60px]"
+            >
+              <a
+                href="#"
+                class="show-modal-Second px-8 py-4 text-[color:var(--blue)] bg-white font-bold text-sm lg:text-lg rounded-lg"
+                >I'm a Recruiters</a
+              >
+              <a
+                href="#"
+                class="show-modal-Second px-8 py-4 text-sm lg:text-lg rounded-lg font-bold text-white bg-[color:var(--orange)] hover:bg-[color:var(--hover-orange)]"
+                >I'm an Employer</a
+              >
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="px-[24px] py-[20px] order-1 lg:order-2">
+            <img
+              src="image/hero-illustration.027e9b128bedda604755f796aa774e6a.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero End -->
+
+    <!-- 2nd section -->
+    <section>
+      <div class="lg:border-2 lg:my-10 lg:mx-20 rounded-md shadow-md">
+        <!-- pogress -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 lg:px-20 py-10 lg:py-20 gap-10"
+        >
+          <!-- Right -->
+          <div class="flex flex-col text-center lg:text-start gap-6">
+            <h1 class="text-3xl lg:text-5xl font-semibold text-gray-900">
+                Securing the best candidates for your company
+            </h1>
+            <p class="leading-relaxed text-lg font-medium text-gray-500">
+                Enhancing your hiring process with the help of AI Powered tools and resources Ensuring that you get the best out of the hiring process
+            </p>
+
+            <div class="flex flex-col items-center lg:items-start gap-6">
+              <a
+                href="#"
+                class="show-modal-Second bg-[#F5A74A] hover:bg-[#f5a33e] px-6 py-3 text-base text-white rounded-md font-bold"
+                >START RECRUITING</a
+              >
+            </div>
+          </div>
+
+        <!-- left -->
+        <div class="flex justify-center">
+          <img src="image/company-banner.svg" alt="" />
+        </div>
+    
+        </div>
+        <!-- pogress end -->
+
+        <!-- Amazing Feature -->
+        <div>
+          <h1 class="text-center text-lg lg:text-3xl font-bold">
+            AMAZING FEATURES
+          </h1>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10 lg:px-8 px-4"
+          >
+            <div
+              class="border-2 px-8 py-8 rounded-lg flex flex-col gap-6 shadow-md hover:shadow-lg items-center"
+            >
+              <div class="w-[20%]">
+                <img
+                  src="image/growing-chart-svgrepo-com.svg"
+                  alt=""
+                  class="w-full"
+                />
+              </div>
+              <h3 class="text-center text-lg lg:text-xl font-semibold">
+                Automated sales
+              </h3>
+              <p class="text-center">
+                Providing you unlimited access to steady stream of jobs so that
+                you can source more, to earn more
+              </p>
+            </div>
+
+            <div
+              class="border-2 px-3 py-4 rounded-lg flex flex-col gap-6 shadow-md hover:shadow-lg items-center"
+            >
+              <div class="w-[20%]">
+                <img
+                  src="image/currency-dollar-svgrepo-com.svg"
+                  alt=""
+                  class="w-full"
+                />
+              </div>
+              <h3 class="text-center text-lg lg:text-xl font-semibold">
+                Highest commission
+              </h3>
+              <p class="text-center">
+                Offering the top commission with no sales or admin work. Best
+                benefits for the best resourcing efforts.
+              </p>
+            </div>
+
+            <div
+              class="border-2 px-3 py-4 rounded-lg flex flex-col gap-6 shadow-md hover:shadow-lg items-center"
+            >
+              <div class="w-[20%]">
+                <img
+                  src="image/champion-cup-svgrepo-com.svg"
+                  alt=""
+                  class="w-full"
+                />
+              </div>
+              <h3 class="text-center text-lg lg:text-xl font-semibold">
+                Community perks
+              </h3>
+              <p class="text-center">
+                With our community, you get to enjoy milestone based increment,
+                insurance coverage, and free training programs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- End Amazing Feature -->
+      </div>
+    </section>
+    <!-- End 2nd section -->
+
+    <!-- Start 3rd Section -->
+
+    <section class="bg-gradient-to-l from-[#444DA1] to-[#2068FF]">
+      <div
+        class="container mx-auto grid justify-center grid-cols-1 text-center lg:grid-cols-4 py-8 px-6 lg:px-20 lg:py-10 text-white"
+      >
+        <div class="flex flex-col justify-start m-2 lg:m-6">
+          <p class="text-4xl font-bold leadi lg:text-6xl">5K+</p>
+          <h3 class="text-2xl sm:text-base">Recruiters' Network</h3>
+        </div>
+        <div class="flex flex-col justify-start m-2 lg:m-6">
+          <p class="text-4xl font-bold leadi lg:text-6xl">100K+</p>
+          <h3 class="text-2xl sm:text-base">Hiring Hours Saved</h3>
+        </div>
+        <div class="flex flex-col justify-start m-2 lg:m-6">
+          <p class="text-4xl font-bold leadi lg:text-6xl">80%</p>
+          <h3 class="text-2xl sm:text-base">TAT Reduced</h3>
+        </div>
+        <div class="flex flex-col justify-start m-2 lg:m-6">
+          <p class="text-4xl font-bold leadi lg:text-6xl">$1M+</p>
+          <h3 class="text-2xl sm:text-base">Savings for Partners</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- End 3rd Section -->
+
+    <!-- start Testimonial -->
+    <section class="testimonial">
+      <div class="w-full">
+        <div class="px-8 lg:px-20 py-8 lg:py-10 relative">
+          <div
+            class="flex flex-col md:flex-row justify-center items-center md:ml-8"
+          >
+            <h2
+              class="text-center text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold mb-3 text-[#444444]"
+            >
+              TESTIMONIALS
+            </h2>
+            <div
+              class="hidden h-24 px-5 md:px-8 lg:px-14 py-3 md:flex flex-col items-center"
+            >
+              <div
+                class="w-1 bg-gradient-to-b from-[#5D91FF] via-[#2068FF] to-[#444DA1] h-full"
+              ></div>
+            </div>
+            <p class="text-center lg:text-2xl lg:font-light text-[#444444]">
+              What recruiters have to <br />
+              say about
+              <span
+                class="bg-clip-text text-transparent bg-gradient-to-r from-[#2068FF] to-[#444DA1] font-semibold"
+                >rework</span
+              >
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 gap-6 mt-[70px] mb-[70px] lg:grid-cols-2"
+          >
+            <div class="p-11 rounded shadow-md hover:shadow-lg rounded-lg">
+              <div class="flex items-center mb-4 space-x-4">
+                <img
+                  src="Image/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3BsYXlcLzBiN2Y0ZTliLWY1OWMtNDAyNC05ZjA2LWIzZGMxMjg1MGFiNy0xOTIwLTEwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9fX0=.webp"
+                  alt=""
+                  class="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500 object-cover"
+                />
+                <div>
+                  <p class="text-base font-semibold">Deepak Rathor</p>
+                  <p class="text-base font-semibold">UI Designer</p>
+                </div>
+              </div>
+              <p class="font-normal text-lg leading-6 text-black">
+                We started working with mFilterlt and almost instantly saw value
+                is subscribing to the service as it helped us challenge and
+                optimize traffic sources, weed out under performing partners and
+                scale with confidence leading to marketing budget optimization.
+              </p>
+            </div>
+
+            <div class="p-11 rounded shadow-md hover:shadow-lg rounded-lg">
+              <div class="flex items-center mb-4 space-x-4">
+                <img
+                  src="Image/images.jpg"
+                  alt=""
+                  class="w-12 h-12 bg-center bg-cover rounded-full object-cover"
+                />
+                <div>
+                  <p class="text-base font-semibold">Heena Khan</p>
+                  <p class="text-base font-semibold">UI Designer</p>
+                </div>
+              </div>
+              <p class="font-normal text-lg leading-6 text-black">
+                Ad-fraud is a challenge with every ad network - Careem works
+                closely with partners to control the fraud and improve the
+                traffic quality using mFilterIt fraud detection tool. The tool
+                categorically identifies the type of fraud and helps understand
+                real value additional by ad-network.
+              </p>
+            </div>
+
+            <div class="p-11 rounded shadow-md hover:shadow-lg rounded-lg">
+              <div class="flex items-center mb-4 space-x-4">
+                <img
+                  src="Image/istockphoto-1335941248-170667a.jpg"
+                  alt=""
+                  class="w-12 h-12 bg-center bg-cover rounded-full object-cover"
+                />
+                <div>
+                  <p class="text-base font-semibold">Sanjay Verma</p>
+                  <p class="text-base font-semibold">UI Designer</p>
+                </div>
+              </div>
+              <p class="font-normal text-lg leading-6 text-black">
+                Rework has made the hiring process so much easier for us. We
+                were able to find the perfect candidate in no time, and the
+                whole process was incredibly efficient and cost-effective.
+                Highly recommend!
+              </p>
+            </div>
+
+            <div class="p-11 rounded shadow-md hover:shadow-lg rounded-lg">
+              <div class="flex items-center mb-4 space-x-4">
+                <img
+                  src="Image/images (1).jpg"
+                  alt=""
+                  class="w-12 h-12 bg-center bg-cover rounded-full object-cover"
+                />
+                <div>
+                  <p class="text-base font-semibold">Rohit Shrivastav</p>
+                  <p class="text-base font-semibold">UI Designer</p>
+                </div>
+              </div>
+              <p class="font-normal text-lg leading-6 text-black">
+                With the support of mFilterlt, we were able to improve the
+                efficiency of our performance marketing spends and optimize our
+                call centre bandwidth basis the quality of the lead. The
+                detailed transactional reporting provided by mFilterlt helped us
+                deliver outstanding business results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonial-->
+
+    <!-- Start last banner-->
+    <section>
+      <div class="w-full">
+        <div
+          class="py-8 lg:py-10 px-10 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-60 items-center"
+        >
+          <!-- left -->
+          <div>
+            <h1 class="text-xl font-semibold my-2 lg:text-6xl text-[#444444]">
+              Don't hesitate <br /><span
+                class="bg-clip-text text-transparent bg-gradient-to-r from-[#2068FF] to-[#444DA1]"
+                >Contact us!</span
+              >
+            </h1>
+            <p class="mt-6 text-[#858585] text-center lg:text-left">
+              One of our customer service representatives will be happy to
+              assist you.
+            </p>
+            <div class="mt-10 flex items-start">
+              <a href="#" class="px-8 py-3 border-2 border-[#2068FF] rounded-lg"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div>
+            <img src="image/contact.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Last Banner -->
+
+    <!-- start Footer -->
+    <footer
+      class="bg-gradient-to-r from-[#444DA1] to-[#2068FF] text-white text-center lg:border-b-2 lg:border-white"
+    >
+      <div class="w-full">
+        <div
+          class="py-8 px-10 lg:py-10 lg:px-24 grid grid-cols-1 lg:grid-cols-3 items-center lg:items-baseline"
+        >
+          <div
+            class="flex flex-col text-center lg:text-left lg:border-r-2 lg:border-white"
+          >
+            <div
+              class="flex justify-center lg:justify-start items-center lg:items-start"
+            >
+              <img
+                src="image/footer_logo.c307f15398dca13bacea.png"
+                alt=""
+                class="w-[50%]"
+              />
+            </div>
+
+            <h4 class="text-lg font-semibold">
+              You do the pre-work <br />
+              We do the rework
+            </h4>
+            <p class="text-lg font-light mt-4">
+              Come join us on a mission to <br />
+              change the hiring industry
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col justify-center items-center text-center mt-2 lg:mt-0 lg:border-r-2 lg:border-white"
+          >
+            <h4 class="text-2xl font-semibold text-white">
+              Technology Partner
+            </h4>
+            <div
+              class="grid grid-cols-2 lg:grid-cols-3 mt-5 ml-10 gap-y-4 items-center text-center justify-center"
+            >
+              <img src="image/t1.png" alt="" />
+              <img src="image/cloud.png" alt="" />
+              <img src="image/duo.png" alt="" />
+              <img src="image/air.png" alt="" />
+              <img src="image/stripe.png" alt="" />
+              <img src="image/jupiter.png" alt="" />
+            </div>
+          </div>
+
+          <div class="mt-6 lg:mt-0">
+            <h4 class="text-2xl font-semibold text-white">Connect us on</h4>
+            <div class="flex justify-center space-x-4 lg:mt-6 mt-4">
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                title="Instagram"
+                class="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-violet-400 dark:text-gray-900"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  fill="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    d="M16 0c-4.349 0-4.891 0.021-6.593 0.093-1.709 0.084-2.865 0.349-3.885 0.745-1.052 0.412-1.948 0.959-2.833 1.849-0.891 0.885-1.443 1.781-1.849 2.833-0.396 1.020-0.661 2.176-0.745 3.885-0.077 1.703-0.093 2.244-0.093 6.593s0.021 4.891 0.093 6.593c0.084 1.704 0.349 2.865 0.745 3.885 0.412 1.052 0.959 1.948 1.849 2.833 0.885 0.891 1.781 1.443 2.833 1.849 1.020 0.391 2.181 0.661 3.885 0.745 1.703 0.077 2.244 0.093 6.593 0.093s4.891-0.021 6.593-0.093c1.704-0.084 2.865-0.355 3.885-0.745 1.052-0.412 1.948-0.959 2.833-1.849 0.891-0.885 1.443-1.776 1.849-2.833 0.391-1.020 0.661-2.181 0.745-3.885 0.077-1.703 0.093-2.244 0.093-6.593s-0.021-4.891-0.093-6.593c-0.084-1.704-0.355-2.871-0.745-3.885-0.412-1.052-0.959-1.948-1.849-2.833-0.885-0.891-1.776-1.443-2.833-1.849-1.020-0.396-2.181-0.661-3.885-0.745-1.703-0.077-2.244-0.093-6.593-0.093zM16 2.88c4.271 0 4.781 0.021 6.469 0.093 1.557 0.073 2.405 0.333 2.968 0.553 0.751 0.291 1.276 0.635 1.844 1.197 0.557 0.557 0.901 1.088 1.192 1.839 0.22 0.563 0.48 1.411 0.553 2.968 0.072 1.688 0.093 2.199 0.093 6.469s-0.021 4.781-0.099 6.469c-0.084 1.557-0.344 2.405-0.563 2.968-0.303 0.751-0.641 1.276-1.199 1.844-0.563 0.557-1.099 0.901-1.844 1.192-0.556 0.22-1.416 0.48-2.979 0.553-1.697 0.072-2.197 0.093-6.479 0.093s-4.781-0.021-6.48-0.099c-1.557-0.084-2.416-0.344-2.979-0.563-0.76-0.303-1.281-0.641-1.839-1.199-0.563-0.563-0.921-1.099-1.197-1.844-0.224-0.556-0.48-1.416-0.563-2.979-0.057-1.677-0.084-2.197-0.084-6.459 0-4.26 0.027-4.781 0.084-6.479 0.083-1.563 0.339-2.421 0.563-2.979 0.276-0.761 0.635-1.281 1.197-1.844 0.557-0.557 1.079-0.917 1.839-1.199 0.563-0.219 1.401-0.479 2.964-0.557 1.697-0.061 2.197-0.083 6.473-0.083zM16 7.787c-4.541 0-8.213 3.677-8.213 8.213 0 4.541 3.677 8.213 8.213 8.213 4.541 0 8.213-3.677 8.213-8.213 0-4.541-3.677-8.213-8.213-8.213zM16 21.333c-2.948 0-5.333-2.385-5.333-5.333s2.385-5.333 5.333-5.333c2.948 0 5.333 2.385 5.333 5.333s-2.385 5.333-5.333 5.333zM26.464 7.459c0 1.063-0.865 1.921-1.923 1.921-1.063 0-1.921-0.859-1.921-1.921 0-1.057 0.864-1.917 1.921-1.917s1.923 0.86 1.923 1.917z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                title="Instagram"
+                class="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-violet-400 dark:text-gray-900"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  fill="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    d="M16 0c-4.349 0-4.891 0.021-6.593 0.093-1.709 0.084-2.865 0.349-3.885 0.745-1.052 0.412-1.948 0.959-2.833 1.849-0.891 0.885-1.443 1.781-1.849 2.833-0.396 1.020-0.661 2.176-0.745 3.885-0.077 1.703-0.093 2.244-0.093 6.593s0.021 4.891 0.093 6.593c0.084 1.704 0.349 2.865 0.745 3.885 0.412 1.052 0.959 1.948 1.849 2.833 0.885 0.891 1.781 1.443 2.833 1.849 1.020 0.391 2.181 0.661 3.885 0.745 1.703 0.077 2.244 0.093 6.593 0.093s4.891-0.021 6.593-0.093c1.704-0.084 2.865-0.355 3.885-0.745 1.052-0.412 1.948-0.959 2.833-1.849 0.891-0.885 1.443-1.776 1.849-2.833 0.391-1.020 0.661-2.181 0.745-3.885 0.077-1.703 0.093-2.244 0.093-6.593s-0.021-4.891-0.093-6.593c-0.084-1.704-0.355-2.871-0.745-3.885-0.412-1.052-0.959-1.948-1.849-2.833-0.885-0.891-1.776-1.443-2.833-1.849-1.020-0.396-2.181-0.661-3.885-0.745-1.703-0.077-2.244-0.093-6.593-0.093zM16 2.88c4.271 0 4.781 0.021 6.469 0.093 1.557 0.073 2.405 0.333 2.968 0.553 0.751 0.291 1.276 0.635 1.844 1.197 0.557 0.557 0.901 1.088 1.192 1.839 0.22 0.563 0.48 1.411 0.553 2.968 0.072 1.688 0.093 2.199 0.093 6.469s-0.021 4.781-0.099 6.469c-0.084 1.557-0.344 2.405-0.563 2.968-0.303 0.751-0.641 1.276-1.199 1.844-0.563 0.557-1.099 0.901-1.844 1.192-0.556 0.22-1.416 0.48-2.979 0.553-1.697 0.072-2.197 0.093-6.479 0.093s-4.781-0.021-6.48-0.099c-1.557-0.084-2.416-0.344-2.979-0.563-0.76-0.303-1.281-0.641-1.839-1.199-0.563-0.563-0.921-1.099-1.197-1.844-0.224-0.556-0.48-1.416-0.563-2.979-0.057-1.677-0.084-2.197-0.084-6.459 0-4.26 0.027-4.781 0.084-6.479 0.083-1.563 0.339-2.421 0.563-2.979 0.276-0.761 0.635-1.281 1.197-1.844 0.557-0.557 1.079-0.917 1.839-1.199 0.563-0.219 1.401-0.479 2.964-0.557 1.697-0.061 2.197-0.083 6.473-0.083zM16 7.787c-4.541 0-8.213 3.677-8.213 8.213 0 4.541 3.677 8.213 8.213 8.213 4.541 0 8.213-3.677 8.213-8.213 0-4.541-3.677-8.213-8.213-8.213zM16 21.333c-2.948 0-5.333-2.385-5.333-5.333s2.385-5.333 5.333-5.333c2.948 0 5.333 2.385 5.333 5.333s-2.385 5.333-5.333 5.333zM26.464 7.459c0 1.063-0.865 1.921-1.923 1.921-1.063 0-1.921-0.859-1.921-1.921 0-1.057 0.864-1.917 1.921-1.917s1.923 0.86 1.923 1.917z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                title="Twitter"
+                class="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-violet-400 dark:text-gray-900"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 32 32"
+                  class="w-4 h-4"
+                >
+                  <path
+                    d="M31.937 6.093c-1.177 0.516-2.437 0.871-3.765 1.032 1.355-0.813 2.391-2.099 2.885-3.631-1.271 0.74-2.677 1.276-4.172 1.579-1.192-1.276-2.896-2.079-4.787-2.079-3.625 0-6.563 2.937-6.563 6.557 0 0.521 0.063 1.021 0.172 1.495-5.453-0.255-10.287-2.875-13.52-6.833-0.568 0.964-0.891 2.084-0.891 3.303 0 2.281 1.161 4.281 2.916 5.457-1.073-0.031-2.083-0.328-2.968-0.817v0.079c0 3.181 2.26 5.833 5.26 6.437-0.547 0.145-1.131 0.229-1.724 0.229-0.421 0-0.823-0.041-1.224-0.115 0.844 2.604 3.26 4.5 6.14 4.557-2.239 1.755-5.077 2.801-8.135 2.801-0.521 0-1.041-0.025-1.563-0.088 2.917 1.86 6.36 2.948 10.079 2.948 12.067 0 18.661-9.995 18.661-18.651 0-0.276 0-0.557-0.021-0.839 1.287-0.917 2.401-2.079 3.281-3.396z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                title="Twitter"
+                class="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-violet-400 dark:text-gray-900"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 32 32"
+                  class="w-4 h-4"
+                >
+                  <path
+                    d="M31.937 6.093c-1.177 0.516-2.437 0.871-3.765 1.032 1.355-0.813 2.391-2.099 2.885-3.631-1.271 0.74-2.677 1.276-4.172 1.579-1.192-1.276-2.896-2.079-4.787-2.079-3.625 0-6.563 2.937-6.563 6.557 0 0.521 0.063 1.021 0.172 1.495-5.453-0.255-10.287-2.875-13.52-6.833-0.568 0.964-0.891 2.084-0.891 3.303 0 2.281 1.161 4.281 2.916 5.457-1.073-0.031-2.083-0.328-2.968-0.817v0.079c0 3.181 2.26 5.833 5.26 6.437-0.547 0.145-1.131 0.229-1.724 0.229-0.421 0-0.823-0.041-1.224-0.115 0.844 2.604 3.26 4.5 6.14 4.557-2.239 1.755-5.077 2.801-8.135 2.801-0.521 0-1.041-0.025-1.563-0.088 2.917 1.86 6.36 2.948 10.079 2.948 12.067 0 18.661-9.995 18.661-18.651 0-0.276 0-0.557-0.021-0.839 1.287-0.917 2.401-2.079 3.281-3.396z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END Footer -->
+    <!-- Footer v-2 -->
+    <section class="bg-gradient-to-r from-[#444DA1] to-[#2068FF] text-white">
+      <div class="w-full">
+        <div
+          class="px-10 py-8 lg:px-20 lg:py-10 flex flex-col lg:flex-row justify-between items-center justify-center"
+        >
+          <h4 class="text-lg lg:text-xl font-semibold">© 2023 Rework.</h4>
+          <h4 class="text-lg lg:text-xl font-semibold">About Us</h4>
+          <h4 class="text-lg lg:text-xl font-semibold">Data Protection</h4>
+          <h4 class="text-lg lg:text-xl font-semibold">Terms and Conditions</h4>
+          <h4 class="text-lg lg:text-xl font-semibold">Privacy And Policy</h4>
+        </div>
+      </div>
+    </section>
+    <!-- end Footer V-2 -->
+
+    <!-- Modal Design -->
+
+    <!-- Login Modal -->
+    <div class="Modal w-[80%] lg:w-[50%] rounded-xl hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <!-- Left -->
+        <div class="bg-gradient-to-r from-[#444DA1] to-[#2068FF] rounded-l-xl">
+          <img src="image/modal.svg" alt="" />
+        </div>
+        <!-- Right -->
+        <div
+          class="w-full max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-900 dark:text-gray-100"
+        >
+          <button class="close-modal">&times;</button>
+          <h1 class="text-2xl font-bold text-center">
+            Welcome back on
+            <span
+              class="bg-clip-text text-transparent bg-gradient-to-r from-[#2068FF] to-[#444DA1]"
+              >rework!</span
+            >
+          </h1>
+          <form novalidate="" action="" class="space-y-6">
+            <div class="space-y-1 text-sm">
+              <label for="username" class="block text-lg font-normal"
+                >Username</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email"
+                class="w-full px-4 py-3 rounded-md border-[1px] border-black focus:none outline-none"
+              />
+            </div>
+            <div class="space-y-1 text-sm">
+              <label for="password" class="block text-lg font-normal"
+                >Password</label
+              >
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                class="w-full px-4 py-3 rounded-md border-[1px] border-black focus:none outline-none"
+              />
+              <div class="flex justify-end text-xs dark:text-gray-400">
+                <a rel="noopener noreferrer" href="#">Forgot Password?</a>
+              </div>
+            </div>
+            <button
+              class="block w-full p-3 text-center rounded-lg text-lg text-white bg-blue-600"
+            >
+              Login
+            </button>
+          </form>
+
+          <p class="text-xs text-center sm:px-6 dark:text-gray-400">
+            Don't have an account?
+            <a
+              rel="noopener noreferrer"
+              href="#"
+              class="underline text-blue-600"
+              >Sign up</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <!-- End Login Modal -->
+
+    <!-- SignIn Modal -->
+    <div class="Modal-Second  w-[80%] lg:w-[70%] rounded-xl top-[80%] lg:top-[50%] hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <!-- Left -->
+        <div
+          class="bg-gradient-to-r from-[#444DA1] to-[#2068FF] rounded-l-xl flex justify-center"
+        >
+          <img src="image/signUp.svg" alt="" />
+        </div>
+
+        <!-- Right -->
+        <section class="p-4">
+          <form
+            novalidate=""
+            action=""
+            class="container flex flex-col mx-auto space-y-12"
+          >
+            <div class="space-y-2 col-span-full lg:col-span-1">
+                <button class="close-modal-second">&times;</button>
+              <p class="font-medium text-center text-2xl">
+                Get started with
+                <span
+                  class="bg-clip-text text-transparent bg-gradient-to-r from-[#2068FF] to-[#444DA1]"
+                  >rework!</span
+                >
+              </p>
+            </div>
+            <fieldset class="grid grid-cols-3 gap-6 rounded-md shadow-sm">
+              <div class="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
+                <div class="col-span-full sm:col-span-6">
+                  <label for="firstname" class="text-lg font-medium"
+                    >Full name</label
+                  >
+                  <input
+                    id="firstname"
+                    type="text"
+                    placeholder="Full Name"
+                    class="w-full rounded-md border-[1px] p-1 border-black focus:none outline-none"
+                  />
+                </div>
+
+                <div class="col-span-full sm:col-span-3">
+                  <label for="firstname" class="text-lg font-medium"
+                    >Company Name</label
+                  >
+                  <input
+                    id="firstname"
+                    type="text"
+                    placeholder="Full Name"
+                    class="w-full rounded-md border-[1px] p-1 border-black focus:none outline-none"
+                  />
+                </div>
+
+                <div class="col-span-full sm:col-span-3">
+                  <label for="email" class="text-lg font-medium"
+                    >Company Email</label
+                  >
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="Email"
+                    class="w-full rounded-md border-[1px] p-1 border-black focus:none outline-none"
+                  />
+                </div>
+
+                <div class="col-span-full">
+                  <label for="Number" class="text-lg font-medium"
+                    >Contruct Number</label
+                  >
+                  <input
+                    id="number"
+                    type="number"
+                    placeholder="Mobile Number"
+                    class="w-full rounded-md border-[1px] p-1 border-black focus:none outline-none"
+                  />
+                </div>
+
+                <div class="col-span-full">
+                  <label for="password" class="text-lg font-medium"
+                    >Password</label
+                  >
+                  <input
+                    id="password"
+                    type="password"
+                    placeholder="Password"
+                    class="w-full rounded-md border-[1px] p-1 border-black focus:none outline-none"
+                  />
+                </div>
+
+                <div class="flex justify-center text-xs col-span-full">
+                  <a rel="noopener noreferrer" href="#">Forgot Password?</a>
+                </div>
+
+
+                <button
+                class="block w-full p-3 text-center rounded-lg text-lg text-white bg-blue-600 col-span-full"
+              >
+                SingUp
+              </button>
+            </form>
+  
+            <p class="text-xs text-center sm:px-6 col-span-full">
+                Already have an account? Login
+
+                By signing up you're agreeing to our
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                class="underline text-blue-600"
+                >login</a
+              >
+            </p>
+
+
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    
+    <div class="overlay hidden"></div>
+    <!-- End SignIn Modal -->
+
+
+    <!-- End Modal Design -->
+  </body>
+</html>
